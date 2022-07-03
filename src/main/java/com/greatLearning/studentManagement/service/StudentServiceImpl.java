@@ -70,7 +70,7 @@ public class StudentServiceImpl implements StudentService {
 		
 		Transaction tx = session.beginTransaction();
 		
-		//find record with id from table
+		//find record with id from Student Table
 		student = session.get(Student.class, id);
 		tx.commit();
 		return student;
